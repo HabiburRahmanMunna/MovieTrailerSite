@@ -1,0 +1,503 @@
+$main:#252529;
+$secondary:#8b8b9f;
+$heighlight:#73e298;
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: sans-serif;
+}
+
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.wrapper{
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 300;
+}
+
+// reset css done|
+
+#top_header{
+    padding: 1.5em 0;
+    .logo{
+        float: left;
+        text-transform: uppercase;
+        font-size: 1.15em;
+        font-weight: 700;
+        span{
+            font-weight: 300;
+            color: $heighlight;
+        }
+    }
+    #main_nav{
+        float: right;
+        font-size: .9em;
+        padding-top: 1em;
+        a{
+            color: $secondary;
+            text-decoration: none;
+            margin-left: 1em;
+        }
+    }
+}
+
+.menu{
+    display: none;
+}
+
+
+#banner{
+    background: linear-gradient(rgba(45, 32, 104, 0.6),rgba(0, 0, 0, 0.8) ), url(../img/hero.jpg);
+    background-color: rgba(0, 0, 0, 0.47);
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    padding: 6.5em 0;
+    #banner_content_wrapper{
+        width: 900px;
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .poster{
+        width: 275px;
+        position: relative;
+        float: left;
+        
+        .f_img{
+            width: 100%;
+            max-width: 100%;
+            border-radius: .5em;
+            -webkit-box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+            -mox-box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+            box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+        }
+        .play_btn{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -28px;
+            margin-top: -28px;
+            display: block;
+            color: rgb(255, 255, 255);
+            background-color: rgb(211, 62, 35);
+            box-shadow: 5px solid #298849;
+            border-radius: 15px;
+            i{
+                padding: 14px;
+                padding-left: 20px;
+                font-size: 32px;
+            }
+  
+        }
+        a:hover{
+            color: red;
+            background-color: rgb(17, 168, 206);
+        }
+    }
+    .content{
+        float: left;
+        width: 500px;
+        margin-left: 100px;
+        .title{
+            display: inline;
+            font-size: 1.75em;
+            color: #fff;
+        }
+        .rating{
+            display: inline;
+            color: $heighlight;
+            font-size: 1.35em;
+            margin: 0.15em;
+            .inactive{
+                color: #48494d;
+            }
+        }
+        .description{
+            color: #bbbebf;
+            font-size: 1em;
+            line-height: 2;
+        }
+        .info{
+            color: #fff;
+            font-size: .8em;
+            font-weight: 700;
+            margin-top: 3em;
+            span{
+                margin: 0 .5em;
+            }
+        }
+        
+    }
+}
+
+
+#top_movies, #top_shows{
+    padding: 5em 0;
+    header {
+        padding: 0 0 1.5em 0;
+        h2, .view_more{
+            display: inline;
+        }
+        h2{
+            font-size: 1.75em;
+
+        }
+        .view_more{
+            float: right;
+            font-size: .8em;
+            margin: .75em 3.5% 0;
+        }
+    }
+
+.row{
+    width: 100%;
+    .post{
+        width: 14%;
+        float: left;
+        margin-right: 2.5%;
+        img{
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            border-radius: .5em;
+        }
+        .tittle{
+            font-size: 1.25em;
+            margin: 1em 0 0 0;
+            color: $main;
+        }
+        .post_info{
+            font-size: .75em;
+            color: $secondary;
+            margin: 0.5em 0;
+        }
+    }
+}
+
+}
+
+
+#newslatter{
+    padding: 5em 0;
+    text-align: center;
+    background: #2a2a2a;
+    .newsletter_inner{
+        width: 600px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 1.75em;
+        color: #fff;
+    }
+    .sign_up_form{
+        margin-top: 3em;
+        input[type="text"], input[type="email"]{
+            width: 48%;
+            margin: 0 .5%;
+            height: 3.25em;
+            border: none;
+            outline: none;
+            border-radius: .3em;
+            background: #404043;
+            padding: .5em 1.25em;
+            font-size: .8em;
+            color: #fff;
+        }
+        .button{
+            border: none;
+            outline: none;
+            padding: 1em 4.5em;
+            border-radius: 2em;
+            background: $heighlight;
+            color: #fff;
+            font-weight: 700;
+            font-size: .9em;
+            margin-top: 3em;
+        }
+    }
+
+}
+
+.main_footer{
+    padding: 2.5em 0;
+    text-align: center;
+    .logo{
+        text-transform: uppercase;
+        font-size: 1.15em;
+        font-weight: 700;
+        span{
+            font-weight: 300;
+            color: $heighlight;
+        }
+    }
+    .copyright{
+        color: $secondary;
+        font-size: .75em;
+        margin: 0;
+    }
+    .links{
+        display: inline;
+        a{
+            color: $secondary;
+            text-decoration: none;
+            font-size: .75em;
+            margin: 0 .5em;
+            &:hover{
+                color: $heighlight;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media(min-width: 576px) and (max-width: 768px){
+    #main_nav{
+        display: none;
+    }
+    #main_nav.active{
+        display: block;
+        width: 100%;
+        a{
+            display: block;
+            padding: 1em 0;
+            border-bottom: 1px solid #e9e9e9;
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+    .menu{
+        display: block;
+        float: right;
+        i{
+            font-size: 1.5em;
+            color: $main;
+            padding-top: .6em;
+        }
+    }
+    
+#banner{
+    padding: 3.5em 0;
+    .poster{
+        width: 275px;
+        position: relative;
+        float: left;
+        .play_btn{
+            margin-left: -25px;
+            margin-top: -25px;
+            i{
+                padding: 12px;
+                padding-left: 16px;
+                font-size: 22px;
+            }
+  
+        }
+    }
+    .content{
+        margin-left: 50px;
+        .title{
+            font-size: 1.5em;
+        }
+        .rating{
+            font-size: 1em;
+            margin: 0.15em;
+            .inactive{
+                color: #48494d;
+            }
+        }
+        .description{
+            font-size: .9em;
+            line-height: 2;
+        }
+        .info{
+            font-size: .7em;
+            margin-top: 2em;
+            span{
+                margin: 0 .25em;
+            }
+        }
+        
+    }
+}
+
+#top_movies, #top_shows{
+    padding: 3em 0;
+    header {
+        padding: 0 0 1.5em 0;
+        h2, .view_more{
+            display: inline;
+        }
+        h2{
+            font-size: 1.75em;
+
+        }
+        .view_more{
+            float: right;
+            font-size: .8em;
+            margin: .75em 3.5% 0;
+        }
+    }
+
+.row{
+    .post{
+        width: 30.7%;
+        float: left;
+        margin-right: 0 1.25% 2em 1.25%;
+        img{
+            height: 244px;
+        }
+        .tittle{
+            font-size: 1em;
+            margin: .5em 0 0 0;
+        }
+        .post_info{
+            font-size: .65em;
+        }
+    }
+}
+
+}
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 575px){
+
+    #main_nav{
+        display: none;
+    }
+    #main_nav.active{
+        display: block;
+        width: 100%;
+        a{
+            display: block;
+            padding: 1em 0;
+            border-bottom: 1px solid #e9e9e9;
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+    .menu{
+        display: block;
+        float: right;
+        i{
+            font-size: 1.5em;
+            color: $main;
+            padding-top: .6em;
+        }
+    }
+    
+
+#banner{
+    padding: 2em 0em 12em 0em;
+    #banner_content_wrapper{
+        display: block;
+    
+    .poster{
+        width: 220px;
+        float: none;
+        display: block;
+        margin: 0 auto; 
+        img{
+            height: auto;
+        }      
+    }
+    .content{
+        width: 100%;
+        margin: 1em auto 0 auto;
+        .title{
+            font-size: 1.40em;
+        }
+        .rating{
+            font-size: 1.05em;
+        }
+        .description{
+            font-size: .8em;
+            line-height: 1.3;
+        }
+        .info{
+            font-size: 0.7em;
+            font-weight: 700;
+            margin-top: 0em;
+        }
+    }
+}
+}
+
+
+#top_movies, #top_shows{
+    padding: 3em 0;
+    header{
+        margin-bottom: 2em;
+        h2{
+            font-size: 1.50em;
+        }
+    }
+.row{
+    .post{
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+    
+    .tittle{
+        font-size: 1em;
+        margin: .5em 0 0 0;
+    }
+}
+}
+
+#newslatter{
+    padding: 3em 0;
+    .newsletter_inner{
+        h2{
+            font-size: 1.30em;
+        }
+        .sign_up_form{
+            margin-top: 2em;
+            input{
+                width: 90%;
+                margin: 0 0 1em 0;
+            }
+            .button{
+                margin-top: 2em;
+            }
+        }
+    }
+}
+
+
+
+
+}
